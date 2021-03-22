@@ -1,0 +1,240 @@
+/* -----------------------------IIMPOSTAZIONI DI RESET -----------------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------------------------HEADER-----------------------------*/
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+header{
+ background-image: url("../img/header.png");
+ background-size: contain;
+}
+
+#miniBox{
+    text-align: center;
+    margin: 0 auto;
+    padding: 5% 0;
+    width: 30%;
+}
+#miniBox > h1{
+    color:white;
+}
+
+/* -----------------------------MAIN-----------------------------*/
+
+.slider{
+    width: 100%;
+    margin-top:1px;
+}
+.slider img{
+    display: none;
+}
+.slider img.active{
+    display: inline-block;
+}
+.prev,
+.next{
+    cursor: pointer;
+    display: inline;
+    margin-left: 32%;
+    font-size: 25px;
+}
+
+.position{
+    display:flex;
+}
+.left, 
+.right{
+    width:50%; 
+}
+.left{
+    text-align: justify;
+}
+.right{
+    padding-left: 5px;
+}
+h2 {
+    width: 100%; 
+    color:#641a45;
+    font-size: 34px;
+    border-bottom: 1px solid #ceccc1; 
+    line-height: 0.1em;
+    margin: 40px 0 ; 
+
+} 
+ 
+h2 span { 
+     background:rgba(255,255,255, 1); 
+     padding-right: 10px; 
+}
+
+.text{
+    padding-right: 5px;
+}
+p{
+    margin-bottom:25px;
+    color:#868683;
+    font-size: 14px;
+}
+.text > :first-child{
+    color:#555553;
+    font-size: 22px;
+}
+
+.right > h2{
+    margin-bottom:45px;
+}
+.right > input{
+    width: 235px;
+    padding: 7px;
+    border: 1px solid #ceccc1;
+}
+.right > img{
+    margin-left:15px;
+}
+
+textarea{
+    width:100%;
+    margin:10px 0;
+    padding:5px;
+    resize: none;
+    border: 1px solid #ceccc1;
+}
+
+a{
+   text-decoration: none;
+}
+.social{
+    display:flex;
+    justify-content: space-between;
+}
+.social > a:hover{
+    background-color: #81744e;
+    border:1px solid #81744e;
+}
+
+.btn{
+    color:white;
+    background-color: #ad9961;
+    border:1px solid #ad9961;
+    padding: 10px 30px;
+}
+
+.circle{
+    display: inline-block;
+    width: 35px;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+    margin: 2px;
+    color:white;
+    background-color: #ad9961;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+.circle:hover{
+    background-color: #81744e;
+}
+.link{
+    display: inline;
+}
+.link img{
+    vertical-align: middle;
+}
+
+.link a{
+    font-size: 18px;
+    font-style: italic;
+    color:#ad9961;
+}
+.link a:hover{
+    color: #81744e;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+
+
+
+
+
+/* -----------------------------RESPONSIVE-----------------------------*/
+
+/*-----------------------------SMATPHONE-----------------------------*/
+@media screen and (max-width:425px){
+    .container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    #miniBox{
+        width:45%;
+    }
+
+    .slider img{
+        width:100%;
+    }
+    .position{
+       display: inline-block;
+    }
+    .left, 
+    .right{
+        width:100%; 
+    }
+    .right > input{
+        width: 195px;
+    }
+    .ourSpace img{
+        max-width:100%;
+    }
+
+    .right img{
+        margin-left:55px;
+    }
+
+
+}
+/*-----------------------------/SMATPHONE-----------------------------*/
+/*-----------------------------TABLET-----------------------------*/
+@media screen and (min-width: 426px) and  (max-width: 768px){
+    .container{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #miniBox{
+        width:45%;
+    }
+    .slider img{
+        width:100%;
+    }
+    .position{
+       display: inline-block;
+    }
+    .left, 
+    .right{
+       width:100%; 
+    }
+    .right > input {
+        width: 245px;
+    }
+
+    .ourSpace img{
+        max-width:500px
+    }
+    .right img{
+        margin-left:75px;
+    }
+
+
+}
+/*-----------------------------/TABLET-----------------------------*/
